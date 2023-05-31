@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    border: 2px solid #000
+}
+
+header .title, .name, .navbar{
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem;
+}
+
+header .navbar ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #000;
+}
+
+header .navbar ul li{
+    list-style: none;
+}
+
+header .navbar ul li a{
+    color: #000;
+    text-decoration: none;
+}
+
+.photos{
+    display: grid;
+    grid-template-areas: 
+    'Foto1 Foto1 Foto2'
+    'Foto3 Foto4 Foto2';
+    gap: .5rem;
+    padding: .5rem;
+    background-color: rgba(208, 205, 205, 0.507);
+}
+
+.Foto1{
+    grid-area: Foto1;
+    
+}
+
+.Foto2{
+    grid-area: Foto2;
+}
+
+.Foto3{
+    grid-area: Foto3;
+}
+
+.Foto4{
+    grid-area: Foto4;
+}
+
+footer{
+    margin: 1.5rem;
+}
+
+footer .dev, .media{
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem;
+}
+
+footer .dev p{
+    font-size: 1.2rem;
+}
+
+footer .media{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
